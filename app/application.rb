@@ -4,8 +4,8 @@ class Application
     resp = Rack::Response.new
 
 
-    num_1 = Time.new(1..12)
-    num_2 = Time.new(12..24)
+    num_1 = Time.new(1..24)
+    num_2 = Time.new(1..24)
     num_3 = Time.new(1..24)
 
     if num_1==num_2 && num_2==num_3
