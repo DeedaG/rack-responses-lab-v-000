@@ -4,11 +4,9 @@ class Application
     resp = Rack::Response.new
 
 
-    num_1 = Time.new(1..24)
-    num_2 = Time.new(1..24)
-    num_3 = Time.new(1..24)
+    time1 = Time.now
 
-    if num_1==num_2 && num_2==num_3
+    if time1 < 12
       resp.write  "Good Morning!"
     else
       resp.write  "Good Afternoon!"
