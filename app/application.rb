@@ -4,7 +4,6 @@ class Application
     resp = Rack::Response.new
     resp.write "Hello, World"
     resp.finish
-  end
 
   if num_1==num_2 && num_2==num_3
     puts "You Win"
