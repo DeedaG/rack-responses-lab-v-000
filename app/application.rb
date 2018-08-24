@@ -2,15 +2,13 @@ class Application
 
   def call(env)
     resp = Rack::Response.new
-    resp.write "Hello, World"
-    resp.finish
 
-  if num_1==num_2 && num_2==num_3
-    puts "You Win"
-  else
-    puts "You Lose"
+    if num_1==num_2 && num_2==num_3
+      resp.write  "You Win"
+    else
+      resp.write  "You Lose"
+    end
+     resp.finish
   end
-  resp.finish
-end
 
 end
